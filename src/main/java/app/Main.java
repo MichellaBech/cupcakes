@@ -1,16 +1,12 @@
 package app;
 
-import app.config.ThymeleafConfig;
-import app.entities.Cupcake;
 import app.entities.User;
 import app.exceptions.DatabaseException;
+import app.persistence.AdminMapper;
 import app.persistence.ConnectionPool;
-import app.persistence.CupcakeMapper;
-import app.persistence.ShoppingCartMapper;
-import io.javalin.Javalin;
-import io.javalin.rendering.template.JavalinThymeleaf;
 
-import java.sql.Connection;
+import static app.persistence.ShoppingCartMapper.payment;
+import static app.persistence.ShoppingCartMapper.showOrderPrice;
 
 
 public class Main {
@@ -32,6 +28,9 @@ public class Main {
         // Routing
 
         app.get("/", ctx ->  ctx.render("index.html")); */
+        User user = new User(1, 1, "beck@gmail.com", "beck", "1234", "user", 250);
 
+
+        AdminMapper.viewAllOrders(connectionPool);
     }
 }

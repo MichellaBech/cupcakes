@@ -73,4 +73,19 @@ import java.sql.SQLException;
                 throw new DatabaseException(msg, e.getMessage());
             }
         }
+
+        public static void updateBalance(User user, double newBalance, ConnectionPool connectionPool) throws DatabaseException {
+            String sql = "UPDATE public.user SET balance = ? WHERE user_id = ?";
+
+            try (
+                    Connection connection = connectionPool.getConnection();
+                    PreparedStatement ps = connection.prepareStatement(sql)
+            ) {
+                ps.setDouble(1, newBalance);
+                ps.setInt(2, user.getUserId());
+                ps.executeUpdate();
+            } catch (SQLException e) {
+                throw new DatabaseException("Error updating balance", e.getMessage());
+            }
+        }
     }

@@ -1,6 +1,8 @@
 package app.entities;
 
-    public class User
+import java.util.List;
+
+public class User
     {
         private int userId;
         private int userNumber;
@@ -23,6 +25,12 @@ package app.entities;
         }
 
         public User(){}
+
+        public User(String username, double balance)
+        {
+            this.username = username;
+            this.balance = balance;
+        }
 
 
         public int getUserId()
@@ -58,6 +66,20 @@ package app.entities;
         public double getBalance()
         {
             return balance;
+        }
+
+        public void setBalance(double balance) {
+            this.balance = balance;
+        }
+
+        public String getUsernameAndBalanceString(List<User> users) {
+            StringBuilder stringBuilder = new StringBuilder();
+            for (User user : users) {
+                stringBuilder.append("User: ").append(user.getUsername())
+                        .append(", balance: ").append(user.getBalance())
+                        .append("\n");
+            }
+            return stringBuilder.toString();
         }
 
         @Override
