@@ -6,6 +6,7 @@ import app.entities.User;
 import app.exceptions.DatabaseException;
 import app.persistence.ConnectionPool;
 import app.persistence.CupcakeMapper;
+import app.persistence.ShoppingCartMapper;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
 
@@ -31,30 +32,6 @@ public class Main {
         // Routing
 
         app.get("/", ctx ->  ctx.render("index.html")); */
-
-        User user = new User(1, 2, "s@gmail.com", "sBeck", "1234", "user", 230);
-
-        int toppingNumber = 1;
-        String toppingName = "Chocolate";
-        int bottomNumber = 2;
-        String bottomName = "Vanilla";
-        int quantity = 3;
-        double orderlinePrice = 30;
-
-        try {
-            // Adding cupcake
-            Cupcake cupcake = CupcakeMapper.addCupcake(user, toppingNumber, toppingName, bottomNumber, bottomName, quantity, orderlinePrice, connectionPool);
-
-            // Checking if cupcake was added successfully
-            if (cupcake != null) {
-                System.out.println("Cupcake added successfully: " + cupcake.toString());
-            } else {
-                System.out.println("Failed to add cupcake.");
-            }
-        } catch (DatabaseException e) {
-            e.printStackTrace();
-            // Handle database exception
-        }
 
     }
 }

@@ -15,6 +15,8 @@ private double topping_price;
         this.topping_price = topping_price;
     }
 
+    public Topping() {}
+
     public double getTopping_price() {
         return topping_price;
     }

@@ -21,6 +21,14 @@ public class Cupcake {
         this.orderline_price = orderline_price;
     }
 
+    public double getOrderline_price()
+    {
+        Topping topping = new Topping();
+        Bottom bottom = new Bottom();
+        Double orderPrice = (topping.getTopping_price() + bottom.getBottom_price()) * quantity;
+        return orderPrice;
+    }
+
     public String toString()
     {
         return "Topping: " + topping_name + " Bottom: " + bottom_name + " Quantity: " + quantity;

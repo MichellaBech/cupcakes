@@ -22,6 +22,8 @@ package app.entities;
             this.balance = balance;
         }
 
+        public User(){}
+
 
         public int getUserId()
         {

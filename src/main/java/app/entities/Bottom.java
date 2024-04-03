@@ -16,6 +16,8 @@ public class Bottom {
         this.bottom_price = bottom_price;
     }
 
+    public Bottom() {}
+
     public String getBottom_name() {
         return bottom_name;
     }
