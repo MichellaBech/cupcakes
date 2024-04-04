@@ -5,8 +5,9 @@ import app.exceptions.DatabaseException;
 import app.persistence.AdminMapper;
 import app.persistence.ConnectionPool;
 
-import static app.persistence.ShoppingCartMapper.payment;
-import static app.persistence.ShoppingCartMapper.showOrderPrice;
+import java.util.List;
+
+import static app.persistence.ShoppingCartMapper.*;
 
 
 public class Main {
@@ -31,6 +32,5 @@ public class Main {
         User user = new User(1, 1, "beck@gmail.com", "beck", "1234", "user", 250);
 
 
-        AdminMapper.viewAllOrders(connectionPool);
     }
 }

@@ -94,4 +94,20 @@ public class CupcakeMapper {
         }
         return cupcake;
     }
+
+
+    public static Cupcake addChocolateFantasy(User user, ConnectionPool connectionPool) throws DatabaseException {
+        return addCupcake(user, 1, "Chocolate", 1, "Chocolate", 1, 10.00, connectionPool);
+    }
+
+    public static Cupcake addStrawberryFairytale(User user, ConnectionPool connectionPool) throws DatabaseException {
+        return addCupcake(user, 5, "Strawberry", 2, "Vanilla", 1, 11.00, connectionPool);
+    }
+
+    public static Cupcake addBlueberryBonanza(User user, ConnectionPool connectionPool) throws DatabaseException {
+        return addCupcake(user, 2,"Blueberry",5, "Almond", 1, 12.00, connectionPool);
+    }
+
+
+
 }
