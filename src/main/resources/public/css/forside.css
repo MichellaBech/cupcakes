@@ -1,0 +1,94 @@
+body {
+    background-color: #abf0f3;
+}
+
+.logo {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 160px;
+    height: 50px;
+}
+
+.logo {
+    margin: auto;
+    border: 3px solid #000000;
+    padding: 5px;
+    outline: #000000 solid 5px;
+}
+
+.loginbutton {
+    height: 20px;
+    left: 550px;
+}
+
+.bygselvbillede {
+    top: -100px;
+    width: 330px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.bygselvcupcake {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -150px;
+}
+
+.bestsellers {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+
+.chokoladebillede {
+    top: -100px;
+    width: 250px;
+    height: 280px;
+    display: block;
+    position: relative;
+    left: 515px;
+}
+
+.chokoladecupcake {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -145px;
+    right: 315px;
+}
+.jordbærbillede{
+    top: -530px;
+    width: 250px;
+    height: 280px;
+    display: block;
+    position: relative;
+    left: 830px;
+}
+.jordbærcupcake {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -595px;
+}
+
+.blåbærcupcake {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -1065px;
+    left: 300px;
+}
+.blåbærbillede{
+    width: 250px;
+    height: 280px;
+    display: block;
+    position: relative;
+    left: 1125px;
+    top: -1000px;
+}
