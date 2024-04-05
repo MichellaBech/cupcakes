@@ -34,7 +34,7 @@ public class Main {
 
         app.get("/", ctx ->  ctx.render("index.html"));
         UserController.addRoutes(app, connectionPool);
-
+        app.post("/", ctx ->  ctx.render("index.html"));
 
 
     }
