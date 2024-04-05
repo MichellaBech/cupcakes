@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,5 +78,21 @@ public class ShoppingCartMapper {
 
         return newBalance;
     }
+
+        public static List<String> generatePickupTimes()
+        {
+            List<String> pickupTimes = new ArrayList<>();
+            LocalDate tomorrow = LocalDate.now().plusDays(1); // Get the next day's date
+            pickupTimes.add("Date: " + tomorrow.toString());
+
+            LocalTime time = LocalTime.of(10, 0); // Start time at 10:00
+
+            while (time.isBefore(LocalTime.of(15, 0))) { // Until 15:00
+                pickupTimes.add(time.toString());
+                time = time.plusMinutes(30); // Increment by 30 minutes
+            }
+
+            return pickupTimes;
+        }
 
 }
