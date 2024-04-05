@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>createuser</title>
+    <link rel="stylesheet" href="../public/css/forside.css">
     <img class="logo" src="img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo" width="260" height="75">
-    <form class="loginbutton" action="/templates/login.html">
+
+    <form method="get" action="loginpage">
+        <button type="submit">Log ind</button>
     </form>
+
     <hr>
 </head>
 <body>
 
-<p>Please Create User</p>
+<p>Her kan du oprette bruger</p>
 
-<form method="post">
-    <input type="text" name="username" placeholder="Enter your username"/>
-    <input type="password" name="password1" placeholder="Enter your password"/>
-    <input type="password" name="password2" placeholder="Enter your password again"/>
+<form method="post" action="/createuser">
+    <input type="text" name="email" placeholder="Skriv din email"/>
+    <input type="text" name="username" placeholder="Skriv brugernavn"/>
+    <input type="password" name="password1" placeholder="Skriv adgangskode"/>
+    <input type="password" name="password2" placeholder="Skriv adgangskode igen"/>
 
-    <button type="submit" formaction="/createuser">Create User</button>
+    <button type="submit">Opret bruger</button>
 
     <div><p th:text="${message}"></p></div>
 </form>
 
-<div th:if="${session.currentUser != null}">
-    <span th:text="${session.currentUser.username}"></span> |
-    <a href="index.html" th:href="@{/logout}">Logout</a>
-</div>
-<p><a href="createuser.html" th:href="@{/createuser}">Create user</a></p>
+
 
 </body>
 </html>

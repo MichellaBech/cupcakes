@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forsiden</title>
-    <link rel="stylesheet" href="../public/css/forside.css">
+    <title>index</title>
+    <link rel="stylesheet" href="/forside.css">
 </head>
 <header>
     <img class="logo" src="img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo">
-    <form class="loginbutton" action="login.html" method="post">
-        <button type="submit">Login</button>
+
+    <div th:if="${session.currentUser == null}">
+    <form method="get" action="loginpage">
+        <button type="submit">Log ind</button>
     </form>
+    </div>
+
+    <div><p th:text="${message}"></p></div>
+
+    <div th:if="${session.currentUser != null}">
+        <span th:text="${session.currentUser.username}"></span> |
+        <a href="index.html" th:href="@{/logout}">Log ud</a>
+    </div>
+
+
+
 </header>
+<body>
+<div class = "showingemail" th:if="${session.currentUser != null}">
+    <span th:text="${session.currentUser.userMail}"></span> |
+</div>
+
 <div class="bestsellers">
     <h1>
         <ins>Best Sellers!</ins>
@@ -41,4 +59,6 @@
     <p class="blåbærbonanza fyldtekst">En festlig<br>blanding af søde og saftige<br>blåbær, der får dine smagsløg<br>til
         af danse af glæde.</p>
 </div>
+
+</body>
 </html>

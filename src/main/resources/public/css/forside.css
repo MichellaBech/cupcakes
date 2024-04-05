@@ -4,7 +4,7 @@ body {
 
 .logo {
     position: fixed;
-    left: 0px;
+    left: 100px;
     top: 0px;
     display: block;
     width: 160px;
@@ -21,12 +21,13 @@ body {
 .loginbutton {
     height: 20px;
     left: 550px;
+    align-content: center;
 }
 
 .bygselvbillede {
     top: -100px;
-    width: 330px;
-    height: 300px;
+    width: 1500px;
+    height: 100px;
     display: block;
     margin: auto;
     position: relative;
@@ -91,4 +92,9 @@ body {
     position: relative;
     left: 1125px;
     top: -1000px;
+}
+
+.showingemail{
+    align-content: center;
+    justify-content: center;
 }

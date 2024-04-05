@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../public/css/forside.css">
+    <img class="logo" src="img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo" width="260" height="75">
+    <hr>
+</head>
+<body>
+
+<p>Log ind</p>
+
+<form method="post">
+    <input type="text" name="username" placeholder="Skriv dit brugernavn"/>
+    <input type="password" name="password" placeholder="Skriv din adgangskode"/>
+
+    <button type="submit" formaction="/loginpage" >Log på</button>
+
+    <div><p th:text="${message}"></p></div>
+</form>
+
+<p><a href="createuser.html" th:href="@{/createuser}">Opret bruger</a></p>
+
+</body>
+</html>
