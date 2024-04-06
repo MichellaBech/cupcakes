@@ -1,11 +1,18 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: #abf0f3;
+    overflow: hidden;
+}
+
+html, body {
+    overflow: visible;
 }
 
 .logo {
+    background-color: #ff00e4;
     position: fixed;
-    left: 100px;
-    top: 0px;
+    left: 5px;
+    top: 5px;
     display: block;
     width: 160px;
     height: 50px;
@@ -13,21 +20,43 @@ body {
 
 .logo {
     margin: auto;
-    border: 3px solid #000000;
+    border: 3px solid #ff00e4;
     padding: 5px;
-    outline: #000000 solid 5px;
+    outline: #ff00e4 solid 5px;
 }
 
 .loginbutton {
-    height: 20px;
-    left: 550px;
-    align-content: center;
+    position: fixed;
+    background-color: #ff00e4; /* Green */
+    border: none;
+    color: white;
+    padding: 27px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    left: 185px;
+    top: -3px;
+}
+
+.indkøbskurv_knap {
+    position: fixed;
+    background-color: #ff00e4;
+    border: none;
+    color: white;
+    padding: 27px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    left: 325px;
+    top: -3px;
 }
 
 .bygselvbillede {
-    top: -100px;
-    width: 1500px;
-    height: 100px;
+    top: -25px;
+    width: 330px;
+    height: 300px;
     display: block;
     margin: auto;
     position: relative;
@@ -37,64 +66,51 @@ body {
     display: block;
     text-align: center;
     position: relative;
-    top: -150px;
+    top: -55px;
 }
 
 .bestsellers {
     display: block;
     text-align: center;
     position: relative;
-    top: 400px;
+    top: 525px;
+    padding: 2px;
+    background-color: #ff00e4;
+
 }
 
 .chokoladebillede {
-    top: -100px;
     width: 250px;
     height: 280px;
     display: block;
-    position: relative;
-    left: 515px;
+    margin: 0 auto;
 }
 
 .chokoladecupcake {
-    display: block;
+    margin-top: -10px;
     text-align: center;
-    position: relative;
-    top: -145px;
-    right: 315px;
 }
-.jordbærbillede{
-    top: -530px;
+
+.jordbærbillede {
     width: 250px;
     height: 280px;
     display: block;
-    position: relative;
-    left: 830px;
+    margin: 0 auto;
 }
+
 .jordbærcupcake {
-    display: block;
+    margin-top: -30px;
     text-align: center;
-    position: relative;
-    top: -595px;
+}
+
+.blåbærbillede {
+    width: 250px;
+    height: 280px;
+    display: block;
+    margin: 0 auto;
 }
 
 .blåbærcupcake {
-    display: block;
+    margin-top: -30px;
     text-align: center;
-    position: relative;
-    top: -1065px;
-    left: 300px;
-}
-.blåbærbillede{
-    width: 250px;
-    height: 280px;
-    display: block;
-    position: relative;
-    left: 1125px;
-    top: -1000px;
-}
-
-.showingemail{
-    align-content: center;
-    justify-content: center;
 }

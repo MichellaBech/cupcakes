@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DesignCupcake</title>
+    <img class="logo" src="/templates/img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo" width="260" height="75">
+
+</head>
+
+<body>
+<h1>Byg Selv Drømmecupcake</h1>
+<br><br>
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label for="bottom">Vælg en bund:</label></td>
+            <td>
+                <select name="bottom" id="bottom" required>
+                    <option value="Chocolate">Chokolade</option>
+                    <option value="Vanilla">Vanilje</option>
+                    <option value="Nutmeg">Muskat</option>
+                    <option value="Pistacio">Pistacie</option>
+                    <option value="Almond">Mandel</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="topping">Vælg en top:</label></td>
+            <td>
+                <select name="topping" id="topping" required>
+                    <option value="Chocolate">Chokolade</option>
+                    <option value="Blueberry">Blåbær</option>
+                    <option value="Rasberry">Hindbær</option>
+                    <option value="Crispy">Knasende</option>
+                    <option value="Strawberry">Jordbær</option>
+                    <option value="Rum/Raisin">Rum/Rosin</option>
+                    <option value="Orange">Appelsin</option>
+                    <option value="Lemon">Citron</option>
+                    <option value="Blue cheese">Blå ost</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="amount">Vælg et antal:</label></td>
+            <td>
+                <select name="amount" id="amount" required>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <div class="vælg_cupcake_knap">
+                <form method="post" action="designCupcake">
+                    <button type="submit">Føj til kurv</button>
+                </form>
+            </div>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

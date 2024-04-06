@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="addCupcake method, getAllBottoms method,&#10;getAllToppings method, Maria's userMapper, User, and exceptions">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" afterDir="false" />
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="html login and create user">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/img/blåbærcup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/blåbærcup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/img/bygselvcup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/bygselvcup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/img/chokoladecup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/chokoladecup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/img/jordbærcup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/jordbærcup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "htmlandbackend",
-    "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/lifehack_spring_2024",
+    "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -73,10 +68,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\images" />
-      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\css" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public" />
+      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\images" />
+      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\css" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates\profilside" />
     </key>
   </component>
@@ -109,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712134945461</updated>
       <workItem from="1712134946487" duration="11661000" />
+      <workItem from="1712424832246" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -150,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712328883312</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="html login and create user">
+      <option name="closed" value="true" />
+      <created>1712347766207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712347766207</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +166,8 @@
     <MESSAGE value="classes" />
     <MESSAGE value="html and css" />
     <MESSAGE value="addCupcake method, getAllBottoms method,&#10;getAllToppings method, Maria's userMapper, User, and exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="addCupcake method, getAllBottoms method,&#10;getAllToppings method, Maria's userMapper, User, and exceptions" />
+    <MESSAGE value="html login and create user" />
+    <option name="LAST_COMMIT_MESSAGE" value="html login and create user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -177,7 +182,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/app/controllers/UserController.java</url>
-          <line>57</line>
+          <line>58</line>
           <properties class="app.controllers.UserController" method="login">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -195,7 +200,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/app/controllers/UserController.java</url>
-          <line>24</line>
+          <line>25</line>
           <properties class="app.controllers.UserController" method="createuser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
