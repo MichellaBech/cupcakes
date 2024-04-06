@@ -19,7 +19,7 @@ public class UserController {
         app.get("/logout", ctx -> logout(ctx));
         app.get("/createuser", ctx -> ctx.render("createuser.html"));
         app.post("/createuser", ctx -> createuser(ctx, connectionPool));
-        app.get("/designCupcake", ctx -> ctx.render("designCupcake.html"));
+        app.get("/designCupcake", ctx -> ctx.render("designcupcake.html"));
 
     }
 

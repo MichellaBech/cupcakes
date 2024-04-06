@@ -2,22 +2,27 @@ package app.persistence;
 
 import app.entities.Bottom;
 import app.entities.Cupcake;
-import app.entities.Topping;
 import app.entities.User;
 import app.exceptions.DatabaseException;
-import org.eclipse.jetty.server.Authentication;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CupcakeMapper {
-    public static List<Topping> getAllToppings(ConnectionPool connectionPool) throws DatabaseException {
-        List<Topping> toppingList = new ArrayList<>();
+    public static Map<String, Double> getAllToppings(ConnectionPool connectionPool) throws DatabaseException {
+
+        /*Insertion Order: Unlike HashMap, which does not guarantee any specific order of its elements,
+        LinkedHashMap maintains the order in which the entries were inserted into the map.
+        When iterating over a LinkedHashMap, the elements are returned in the same order in which they were inserted.
+         */
+
+        Map<String, Double> toppingMap = new LinkedHashMap<>();
 
         String sql = "SELECT topping_name, topping_price FROM public.topping\n" +
                 "ORDER BY topping_id ASC";
-
 
         try (
                 Connection connection = connectionPool.getConnection();
@@ -27,16 +32,17 @@ public class CupcakeMapper {
             while (rs.next()) {
                 String name = rs.getString("topping_name");
                 Double price = rs.getDouble("topping_price");
-                toppingList.add(new Topping(name, price));
+                toppingMap.put(name, price);
+
             }
         } catch (SQLException e) {
             throw new DatabaseException("Fejl", e.getMessage());
         }
-        return toppingList;
+        return toppingMap;
     }
 
-    public static List<Bottom> getAllBottoms(ConnectionPool connectionPool) throws DatabaseException {
-        List<Bottom> bottomList = new ArrayList<>();
+    public static Map<String, Double> getAllBottoms(ConnectionPool connectionPool) throws DatabaseException {
+        Map<String, Double> bottomMap = new LinkedHashMap<>();
 
         String sql = "SELECT bottom_name, bottom_price FROM public.bottom\n" +
                 "ORDER BY bottom_id ASC";
@@ -50,12 +56,12 @@ public class CupcakeMapper {
             while (rs.next()) {
                 String name = rs.getString("bottom_name");
                 Double price = rs.getDouble("bottom_price");
-                bottomList.add(new Bottom(name, price));
+                bottomMap.put(name, price);
             }
         } catch (SQLException e) {
             throw new DatabaseException("Fejl", e.getMessage());
         }
-        return bottomList;
+        return bottomMap;
     }
 
     public static Cupcake addCupcake(User user, int topping_number, String topping_name, int bottom_number, String bottom_name,

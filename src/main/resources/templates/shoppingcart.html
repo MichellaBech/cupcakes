@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>shoppingcart</title>
+    <title>Shopping Cart</title>
 </head>
 <body>
-
+<h1>Shopping Cart</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Bund</th>
+        <th>Top</th>
+        <th>Antal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over each cupcake in the shopping cart -->
+    <tr th:each="cupcake : ${session.shoppingCart}">
+        <!-- Output cupcake details -->
+        <td th:text="${cupcake.bottom_name}"></td>
+        <td th:text="${cupcake.topping_name}"></td>
+        <td th:text="${cupcake.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

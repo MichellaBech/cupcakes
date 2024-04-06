@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../public/css/forside.css">
+    <!--- <link rel="stylesheet" th:href="@{/css/forside.css}" href="../public/css/forside.css"> -->
     <link rel="stylesheet" href="../../public/css/indkøbskurv.css">
 </head>
 
@@ -12,7 +12,7 @@
 <header>
     <img class="logo" th:href="@{/images/cupcakefactorylogo.css}" src="images/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo">
 
-    <div class="indkøbskurv_knap" th:if="${session.currentUser == null}">
+    <div class="loginbutton" th:if="${session.currentUser == null}">
     <form method="get" action="loginpage">
         <button type="submit">Log ind</button>
     </form>
@@ -23,6 +23,7 @@
             <button type="submit">indkøbskurv</button>
         </form>
     </div>
+
     <div><p th:text="${message}"></p></div>
 
     <div th:if="${session.currentUser != null}">
@@ -47,8 +48,9 @@
         <h2 class="byg din egen cupcake overskrift"><strong>Byg din egen cupcake:</strong></h2>
         <p class="byg din egen cupcake fyldtekst">Skab din egen <br>drømmecupcake - vælg bund,<br>frosting og toppings, og
             nyd<br>en unik smagsoplevelse!</p>
+
         <div class="vælg_cupcake_knap">
-            <form method="get" action="designCupcake">
+            <form method="get" action="designcupcake">
                 <button type="submit">Vælg</button>
             </form>
         </div>
