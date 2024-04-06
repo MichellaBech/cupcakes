@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="html login and create user">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" afterDir="false" />
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="index.html and designCupcake.html">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="htmllogin" />
+        <entry key="$PROJECT_DIR$" value="htmlandbackend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "htmlandbackend",
+    "git-widget-placeholder": "htmlandscss",
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712134945461</updated>
       <workItem from="1712134946487" duration="11661000" />
-      <workItem from="1712424832246" duration="4011000" />
+      <workItem from="1712424832246" duration="5911000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -154,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712347766207</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="index.html and designCupcake.html">
+      <option name="closed" value="true" />
+      <created>1712429406263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712429406263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +172,8 @@
     <MESSAGE value="html and css" />
     <MESSAGE value="addCupcake method, getAllBottoms method,&#10;getAllToppings method, Maria's userMapper, User, and exceptions" />
     <MESSAGE value="html login and create user" />
-    <option name="LAST_COMMIT_MESSAGE" value="html login and create user" />
+    <MESSAGE value="index.html and designCupcake.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html and designCupcake.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
