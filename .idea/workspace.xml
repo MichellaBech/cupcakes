@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4d2746d-a9fa-4457-bf53-697153f8d51a" name="Changes" comment="profilside">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profilside/vælg-profil.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profilside/vælg-profil.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ebPW9YPbOVXJQOGayoL9ik7lsq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;forsiden-html/css&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DAT/2. Semester/Cupcake/Koden/src/main/resources/templates/img&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\templates\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\templates" />
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\public\css" />
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\templates\index" />
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\templates\profilside" />
+      <recent name="D:\DAT\2. Semester\Cupcake\Koden\src\main\resources\templates\img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4d2746d-a9fa-4457-bf53-697153f8d51a" name="Changes" comment="" />
+      <created>1712170333636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712170333636</updated>
+      <workItem from="1712170334765" duration="6359000" />
+      <workItem from="1712210321206" duration="3260000" />
+      <workItem from="1712227933246" duration="168000" />
+      <workItem from="1712228199075" duration="6630000" />
+      <workItem from="1712253293281" duration="10647000" />
+      <workItem from="1712293852220" duration="4184000" />
+      <workItem from="1712309495839" duration="348000" />
+      <workItem from="1712398067394" duration="13154000" />
+    </task>
+    <task id="LOCAL-00001" summary="Oprettet &quot;resources&quot; og tilføjet mapperne.&#10;gjort klar til at kode html og css.&#10;tilføjet billedet.">
+      <option name="closed" value="true" />
+      <created>1712171326960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712171326960</updated>
+    </task>
+    <task id="LOCAL-00002" summary="forsiden .&#10;- Mangler køb/vælg knapper.&#10;- mangler at fixe header (login knap skal flyttes, samt indkøbskurv skal være der).">
+      <option name="closed" value="true" />
+      <created>1712297594137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712297594137</updated>
+    </task>
+    <task id="LOCAL-00003" summary="profilside">
+      <option name="closed" value="true" />
+      <created>1712309589839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712309589839</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Oprettet &quot;resources&quot; og tilføjet mapperne.&#10;gjort klar til at kode html og css.&#10;tilføjet billedet." />
+    <MESSAGE value="forsiden .&#10;- Mangler køb/vælg knapper.&#10;- mangler at fixe header (login knap skal flyttes, samt indkøbskurv skal være der)." />
+    <MESSAGE value="Fixet sidens indhold og format så man ikke kan scrolle, og tingene er centreret." />
+    <MESSAGE value="profilside" />
+    <option name="LAST_COMMIT_MESSAGE" value="profilside" />
+  </component>
+</project>
