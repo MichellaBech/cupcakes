@@ -5,6 +5,28 @@ public class Cupcake {
    private int user_number;
    private int topping_number;
     private String topping_name;
+    private double orderline_price;
+    private int quantity;
+    private int bottom_number;
+    private String bottom_name;
+
+    private double topping_price;
+    private double bottom_price;
+
+    private double totalPrice;
+
+    public Cupcake(int user_number, int topping_number, String topping_name, int bottom_number, String bottom_name, int quantity, double orderline_price) {
+        this.topping_number = topping_number;
+        this.topping_name = topping_name;
+        this.bottom_number = bottom_number;
+        this.bottom_name = bottom_name;
+        this.quantity = quantity;
+        this.orderline_price = orderline_price;
+    }
+
+    public double getTotalPrice() {
+        return ((topping_price + bottom_price) * quantity);
+    }
 
     public String getTopping_name() {
         return topping_name;
@@ -18,22 +40,6 @@ public class Cupcake {
         return quantity;
     }
 
-    private int bottom_number;
-    private String bottom_name;
-
-    private int quantity;
-    private double orderline_price;
-
-
-
-    public Cupcake(int user_number, int topping_number, String topping_name, int bottom_number, String bottom_name, int quantity, double orderline_price) {
-        this.topping_number = topping_number;
-        this.topping_name = topping_name;
-        this.bottom_number = bottom_number;
-        this.bottom_name = bottom_name;
-        this.quantity = quantity;
-        this.orderline_price = orderline_price;
-    }
 
     public void setTopping_name(String topping_name) {
         this.topping_name = topping_name;
@@ -49,10 +55,11 @@ public class Cupcake {
 
 
 
-    public Cupcake(String bottom_name, String topping_name, int quantity){
+    public Cupcake(String bottom_name, String topping_name, int quantity, double totalPrice){
         this.bottom_name = bottom_name;
         this.topping_name = topping_name;
         this.quantity = quantity;
+        this.totalPrice = totalPrice;
     }
 
     public double getOrderline_price()

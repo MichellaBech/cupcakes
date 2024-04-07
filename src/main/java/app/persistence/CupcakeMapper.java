@@ -64,7 +64,46 @@ public class CupcakeMapper {
         return bottomMap;
     }
 
-    public static Cupcake addCupcake(User user, int topping_number, String topping_name, int bottom_number, String bottom_name,
+    public static double getBottomPrice(String bottom_name, ConnectionPool connectionPool) throws DatabaseException {
+        String sql = "SELECT bottom_price FROM public.bottom WHERE bottom_name = ?";
+
+        Double price = null;
+        try (
+                Connection connection = connectionPool.getConnection();
+                PreparedStatement ps = connection.prepareStatement(sql)
+        ) {
+            ps.setString(1, bottom_name);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                price = rs.getDouble("bottom_price");
+            }
+        } catch (SQLException e) {
+            throw new DatabaseException("Fejl", e.getMessage());
+        }
+        return price;
+    }
+
+    public static double getToppingPrice(String topping_name, ConnectionPool connectionPool) throws DatabaseException {
+        String sql = "SELECT topping_price FROM public.topping WHERE topping_name = ?";
+
+        Double price = null;
+        try (
+                Connection connection = connectionPool.getConnection();
+                PreparedStatement ps = connection.prepareStatement(sql)
+                ) {
+            // Set the value of the parameter before executing the query
+            ps.setString(1, topping_name);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                price = rs.getDouble("topping_price");
+            }
+        } catch (SQLException e) {
+            throw  new DatabaseException("Fejl", e.getMessage());
+        }
+        return price;
+    }
+
+        public static Cupcake addCupcake(User user, int topping_number, String topping_name, int bottom_number, String bottom_name,
                                      int quantity, double orderline_price, ConnectionPool connectionPool) throws DatabaseException {
         Cupcake cupcake = null;
 
@@ -101,18 +140,6 @@ public class CupcakeMapper {
         return cupcake;
     }
 
-
-    public static Cupcake addChocolateFantasy(User user, ConnectionPool connectionPool) throws DatabaseException {
-        return addCupcake(user, 1, "Chocolate", 1, "Chocolate", 1, 10.00, connectionPool);
-    }
-
-    public static Cupcake addStrawberryFairytale(User user, ConnectionPool connectionPool) throws DatabaseException {
-        return addCupcake(user, 5, "Strawberry", 2, "Vanilla", 1, 11.00, connectionPool);
-    }
-
-    public static Cupcake addBlueberryBonanza(User user, ConnectionPool connectionPool) throws DatabaseException {
-        return addCupcake(user, 2,"Blueberry",5, "Almond", 1, 12.00, connectionPool);
-    }
 
 
 

@@ -12,16 +12,29 @@
         <th>Bund</th>
         <th>Top</th>
         <th>Antal</th>
+        <th>Pris</th>
     </tr>
     </thead>
     <tbody>
+    <div class = "showingemail" th:if="${session.currentUser != null}">
+        <span th:text="${session.currentUser.userMail}"></span> |
+    </div>
     <!-- Iterate over each cupcake in the shopping cart -->
     <tr th:each="cupcake : ${session.shoppingCart}">
         <!-- Output cupcake details -->
         <td th:text="${cupcake.bottom_name}"></td>
         <td th:text="${cupcake.topping_name}"></td>
         <td th:text="${cupcake.quantity}"></td>
+        <td th:text="${cupcake.totalPrice}"></td> <!-- Display total price -->
     </tr>
+
+
+    <div class="loginbutton" th:if="${session.currentUser == null}">
+        <form method="post" action="payment">
+            <button type="submit">Betal</button>
+        </form>
+    </div>
+
     </tbody>
 </table>
 </body>
