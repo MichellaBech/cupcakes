@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>designcupcake</title>
-    <img class="logo" src="/templates/img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo" width="260" height="75">
+    <link rel="stylesheet" th:href="@{css/forside.css}" href="../public/css/forside.css">
 </head>
 <div class = "showingemail" th:if="${session.currentUser != null}">
     <span th:text="${session.currentUser.userMail}"></span> |
@@ -60,7 +60,7 @@
 
 <div><p th:text="${session.message}"></p></div>
 
-<div class="indkøbskurv_knap">
+<div>
     <form method="post" action="shoppingcart">
         <button type="submit">Indkøbskurv</button>
     </form>
