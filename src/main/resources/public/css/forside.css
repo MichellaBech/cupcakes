@@ -26,8 +26,8 @@ html, body {
 }
 
 .loginbutton {
-    position: fixed;
-    background-color: #ff00e4; /* Green */
+    /*position: fixed;*/
+    background-color: #ff00e4;
     border: none;
     color: white;
     padding: 27px 45px;
@@ -67,50 +67,4 @@ html, body {
     text-align: center;
     position: relative;
     top: -55px;
-}
-
-.bestsellers {
-    display: block;
-    text-align: center;
-    position: relative;
-    top: 525px;
-    padding: 2px;
-    background-color: #ff00e4;
-
-}
-
-.chokoladebillede {
-    width: 250px;
-    height: 280px;
-    display: block;
-    margin: 0 auto;
-}
-
-.chokoladecupcake {
-    margin-top: -10px;
-    text-align: center;
-}
-
-.jordbærbillede {
-    width: 250px;
-    height: 280px;
-    display: block;
-    margin: 0 auto;
-}
-
-.jordbærcupcake {
-    margin-top: -30px;
-    text-align: center;
-}
-
-.blåbærbillede {
-    width: 250px;
-    height: 280px;
-    display: block;
-    margin: 0 auto;
-}
-
-.blåbærcupcake {
-    margin-top: -30px;
-    text-align: center;
 }
