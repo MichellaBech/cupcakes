@@ -51,7 +51,7 @@ public class UserController {
     }
 
     private static void logout(Context ctx) {
-        ctx.req().getSession().invalidate(); //Vi vil slette alt der ligger på vores nuværende session
+        ctx.req().getSession().invalidate();
         ctx.render("index.html");
 
     }
@@ -63,12 +63,11 @@ public class UserController {
         String password = ctx.formParam("password");
 
         try {
-            User user = UserMapper.login(username, password, connectionPool); // Call UserMapper.login
+            User user = UserMapper.login(username, password, connectionPool);
             ctx.sessionAttribute("currentUser", user);
             ctx.redirect("/");
         } catch (DatabaseException e) {
             ctx.attribute("message", e.getMessage());
-            // Hvis nej, send tilbage til login med fejl besked
             ctx.render("index.html");
         }
 

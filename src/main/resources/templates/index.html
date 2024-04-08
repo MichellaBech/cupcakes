@@ -21,30 +21,19 @@
     </form>
     </div>
 
-    <div class="indkøbskurv_knap">
-        <form method ="get" action="shoppingcart">
-            <button type="submit">indkøbskurv</button>
-        </form>
-    </div>
-
     <div><p th:text="${message}"></p></div>
 
     <div th:if="${session.currentUser != null}">
         <span th:text="${session.currentUser.username}"></span> |
         <a href="index.html" th:href="@{/logout}">Log ud</a>
     </div>
-
+</div>
 </header>
 
 
 <div class = "showingemail" th:if="${session.currentUser != null}">
     <span th:text="${session.currentUser.userMail}"></span> |
 </div>
-
-<div class="bestsellers">
-    <h1>
-        <ins>Best Sellers!</ins>
-    </h1>
 
     <img class="bygselvbillede"  src="../images/bygselvcup.png">
     <div class="bygselvcupcake">

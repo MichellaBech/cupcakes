@@ -3,16 +3,10 @@ package app;
 import app.config.ThymeleafConfig;
 import app.controllers.CupcakeController;
 import app.controllers.UserController;
-import app.entities.User;
 import app.exceptions.DatabaseException;
-import app.persistence.AdminMapper;
 import app.persistence.ConnectionPool;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
-
-import java.util.List;
-
-import static app.persistence.ShoppingCartMapper.*;
 
 
 public class Main {
@@ -35,9 +29,6 @@ public class Main {
 
         app.get("/", ctx ->  ctx.render("index.html"));
         UserController.addRoutes(app, connectionPool);
-        app.post("/", ctx ->  ctx.render("index.html"));
         CupcakeController.addRoutes(app, connectionPool);
-
-
     }
 }

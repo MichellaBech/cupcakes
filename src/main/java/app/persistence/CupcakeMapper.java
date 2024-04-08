@@ -14,10 +14,7 @@ import java.util.Map;
 public class CupcakeMapper {
     public static Map<String, Double> getAllToppings(ConnectionPool connectionPool) throws DatabaseException {
 
-        /*Insertion Order: Unlike HashMap, which does not guarantee any specific order of its elements,
-        LinkedHashMap maintains the order in which the entries were inserted into the map.
-        When iterating over a LinkedHashMap, the elements are returned in the same order in which they were inserted.
-         */
+
 
         Map<String, Double> toppingMap = new LinkedHashMap<>();
 
@@ -102,45 +99,4 @@ public class CupcakeMapper {
         }
         return price;
     }
-
-        public static Cupcake addCupcake(User user, int topping_number, String topping_name, int bottom_number, String bottom_name,
-                                     int quantity, double orderline_price, ConnectionPool connectionPool) throws DatabaseException {
-        Cupcake cupcake = null;
-
-        String sql = "insert into orderline(user_number, topping_number, topping_name," +
-                " bottom_number, bottom_name, quantity, orderline_price, orderline_date) values (?,?,?,?,?,?,?, current_timestamp)";
-
-        try (
-                Connection connection = connectionPool.getConnection();
-                PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)
-        ) {
-            ps.setInt(1, user.getUserId());
-            ps.setInt(2, topping_number);
-            ps.setString(3, topping_name);
-            ps.setInt(4, bottom_number);
-            ps.setString(5, bottom_name);
-            ps.setInt(6, quantity);
-            ps.setDouble(7, orderline_price);
-            int rowsAffected = ps.executeUpdate();
-            if (rowsAffected == 1) {
-                ResultSet rs = ps.getGeneratedKeys();
-                rs.next();
-                int newOrderline_number = rs.getInt(1);
-                cupcake = new Cupcake(user.getUserId(), topping_number, topping_name, bottom_number, bottom_name,
-                        quantity, orderline_price);
-            } else
-            {
-                throw new DatabaseException("Fejl under indsætning af task: " + topping_name + " " + bottom_name);
-            }
-        }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Fejl i DB connection", e.getMessage());
-        }
-        return cupcake;
-    }
-
-
-
-
 }
