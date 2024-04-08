@@ -45,17 +45,20 @@ import java.sql.SQLException;
             }
         }
 
-        public static void createuser(String userName, String password, ConnectionPool connectionPool) throws DatabaseException
+        public static void createuser(String email, String username, String password, ConnectionPool connectionPool) throws DatabaseException
         {
-            String sql = "insert into users (username, password) values (?,?)";
+            String sql = "insert into public.user (user_email, username, password, balance, role) values (?,?,?,?,?)";
 
             try (
                     Connection connection = connectionPool.getConnection();
                     PreparedStatement ps = connection.prepareStatement(sql)
             )
             {
-                ps.setString(1, userName);
-                ps.setString(2, password);
+                ps.setString(1, email);
+                ps.setString(2, username);
+                ps.setString(3, password);
+                ps.setDouble(4, 400);
+                ps.setString(5, "user");
 
                 int rowsAffected = ps.executeUpdate();
                 if (rowsAffected != 1)
@@ -68,7 +71,7 @@ import java.sql.SQLException;
                 String msg = "Der er sket en fejl. Prøv igen";
                 if (e.getMessage().startsWith("ERROR: duplicate key value "))
                 {
-                    msg = "Brugernavnet findes allerede. Vælg et andet";
+                    msg = "Brugernavnet eller email findes allerede. Vælg et andet eller login";
                 }
                 throw new DatabaseException(msg, e.getMessage());
             }
