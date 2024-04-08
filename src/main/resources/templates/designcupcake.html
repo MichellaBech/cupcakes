@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>designcupcake</title>
+    <img class="logo" src="/templates/img/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo" width="260" height="75">
+</head>
+<div class = "showingemail" th:if="${session.currentUser != null}">
+    <span th:text="${session.currentUser.userMail}"></span> |
+</div>
+<body>
+<div class="loginbutton" th:if="${session.currentUser == null}">
+    <form method="get" action="loginpage">
+        <button type="submit">Log ind</button>
+    </form>
+</div>
+<h1>Byg Selv Drømmecupcake</h1>
+<br><br>
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label for="bottom">Vælg din yndlings smag: </label></td>
+            <td>
+                <select name="bottom" id="bottom" required>
+                    <option value="">Vælg bund</option>
+                    <!-- Iterate over bottoms and populate options -->
+                    <option th:each="entry : ${bottoms.entrySet()}" th:value="${entry.key}" th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
+                </select>
+                </select>
+                <input type="hidden" name="bottom_price" th:value="${bottoms[bottom]}">
+
+
+            </td>
+        </tr>
+        <br/>
+        <tr>
+            <td><label for="topping">Vælg din yndlings smag: </label></td>
+            <td>
+                <select name="topping" id="topping" required>
+                    <option value="">Vælg topping</option>
+                    <!-- Iterate over toppings and populate options -->
+                    <option th:each="entry : ${toppings.entrySet()}" th:value="${entry.key}" th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
+                </select>
+                <input type="hidden" name="topping_price" th:value="${toppings[topping]}">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="amount">Vælg et antal:</label></td>
+            <td>
+                <input type="number" name="amount" id="amount" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Føj til kurv"></td>
+        </tr>
+    </table>
+</form>
+
+<div><p th:text="${session.message}"></p></div>
+
+<div class="indkøbskurv_knap">
+    <form method="post" action="shoppingcart">
+        <button type="submit">Indkøbskurv</button>
+    </form>
+</div>
+
+</body>
+</html>

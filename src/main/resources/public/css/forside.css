@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #abf0f3;
+    overflow: hidden;
+}
+
+html, body {
+    overflow: visible;
+}
+
+.logo {
+    background-color: #ff00e4;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    display: block;
+    width: 160px;
+    height: 50px;
+}
+
+.logo {
+    margin: auto;
+    border: 3px solid #ff00e4;
+    padding: 5px;
+    outline: #ff00e4 solid 5px;
+}
+
+.loginbutton {
+    position: fixed;
+    background-color: #ff00e4; /* Green */
+    border: none;
+    color: white;
+    padding: 27px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    left: 185px;
+    top: -3px;
+}
+
+.indkøbskurv_knap {
+    position: fixed;
+    background-color: #ff00e4;
+    border: none;
+    color: white;
+    padding: 27px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    left: 325px;
+    top: -3px;
+}
+
+.bygselvbillede {
+    top: -25px;
+    width: 330px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.bygselvcupcake {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -55px;
+}
+
+.bestsellers {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 525px;
+    padding: 2px;
+    background-color: #ff00e4;
+
+}
+
+.chokoladebillede {
+    width: 250px;
+    height: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.chokoladecupcake {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.jordbærbillede {
+    width: 250px;
+    height: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.jordbærcupcake {
+    margin-top: -30px;
+    text-align: center;
+}
+
+.blåbærbillede {
+    width: 250px;
+    height: 280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.blåbærcupcake {
+    margin-top: -30px;
+    text-align: center;
+}
