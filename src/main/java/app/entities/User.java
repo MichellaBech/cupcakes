@@ -72,16 +72,6 @@ public class User
             this.balance = balance;
         }
 
-        public String getUsernameAndBalanceString(List<User> users) {
-            StringBuilder stringBuilder = new StringBuilder();
-            for (User user : users) {
-                stringBuilder.append("User: ").append(user.getUsername())
-                        .append(", balance: ").append(user.getBalance())
-                        .append("\n");
-            }
-            return stringBuilder.toString();
-        }
-
         @Override
         public String toString()
         {

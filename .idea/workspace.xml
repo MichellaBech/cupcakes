@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    Refactor_html_controller
     <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="Refactoring mappers, html and controllers" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="html" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +50,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+ Refactor_html_controller
     "git-widget-placeholder": "Refactor__html__controller",
+
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -222,7 +226,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
           <line>36</line>
-          <properties class="app.controllers.CupcakeController" method="designcupcake">
+          <properties class="app.controllers.CupcakeController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
