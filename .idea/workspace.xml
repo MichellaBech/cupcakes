@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Bottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Bottom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/User.java" afterDir="false" />
-    </list>
+    Refactor_html_controller
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="Refactoring mappers, html and controllers" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +50,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "refactoringbackendagain",
+ Refactor_html_controller
+    "git-widget-placeholder": "Refactor__html__controller",
+
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -183,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712501657100</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring mappers, html and controllers">
+      <option name="closed" value="true" />
+      <created>1712570488488</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712570488489</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +217,8 @@
     <MESSAGE value="html login and create user" />
     <MESSAGE value="index.html and designCupcake.html" />
     <MESSAGE value="designCupcake.html shoppingcart.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="designCupcake.html shoppingcart.html" />
+    <MESSAGE value="Refactoring mappers, html and controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring mappers, html and controllers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
