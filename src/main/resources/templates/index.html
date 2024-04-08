@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../public/css/forside.css">
-    <link rel="stylesheet" href="../../public/css/indkøbskurv.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 
 <body>
 <header>
-    <img class="logo" th:href="@{/images/cupcakefactorylogo.css}" src="images/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo">
+<div>
+    <div >
+        <img class="logo" src="images/cupcakefactorylogo.png" alt="Her skal være et cupcakefactory logo">
+    </div>
 
-    <div class="indkøbskurv_knap" th:if="${session.currentUser == null}">
+
+    <div class="loginbutton" th:if="${session.currentUser == null}">
     <form method="get" action="loginpage">
         <button type="submit">Log ind</button>
     </form>
     </div>
 
     <div class="indkøbskurv_knap">
-        <form action="../shoppingcart.html">
+        <form method ="get" action="shoppingcart">
             <button type="submit">indkøbskurv</button>
         </form>
     </div>
+
     <div><p th:text="${message}"></p></div>
 
     <div th:if="${session.currentUser != null}">
@@ -47,47 +51,13 @@
         <h2 class="byg din egen cupcake overskrift"><strong>Byg din egen cupcake:</strong></h2>
         <p class="byg din egen cupcake fyldtekst">Skab din egen <br>drømmecupcake - vælg bund,<br>frosting og toppings, og
             nyd<br>en unik smagsoplevelse!</p>
+
         <div class="vælg_cupcake_knap">
-            <form method="get" action="designCupcake">
+            <form method="get" action="designcupcake">
                 <button type="submit">Vælg</button>
             </form>
         </div>
     </div>
-
-    <img class="chokoladebillede"  src="../public/images/chokoladecup.png">
-    <div class="chokoladecupcake">
-        <h2 class="chokoladefantasi overskrift"><strong>Chokolade-Fantasi:</strong></h2>
-        <p class="chokoladefantasi fyldtekst">En fantasifuld<br>rejse gennem en<br> verden af chokolade,<br>hvor smagen af
-            magi møder<br> virkeligheden.</p>
-        <form action="../shoppingcart.html">
-            <button type="submit">Vælg</button>
-        </form>
-    </div>
-
-    <img class="jordbærbillede"  src="../images/jordbærcup.png" ;>
-    <div class="jordbærcupcake">
-        <h2 class="jordbæreventyr overskrift"><strong>Jordbær-Eventyr:</strong></h2>
-        <p class="jordbæreventyr fyldtekst">En eventyr<br>i hver bid, hvor den intense<br> smag af jordbær møder en<br>himmelsk
-            blanding af cremet<br>glæde.</p>
-        <div class="vælg_cupcake_knap">
-            <form action="../shoppingcart.html">
-                <button type="submit">Vælg</button>
-            </form>
-        </div>
-    </div>
-
-    <img class="blåbærbillede" src="../images/blåbærcup.png">
-    <div class="blåbærcupcake">
-        <h2 class="blåbærbonanza overskrift"><strong>Blåbær-Bonanza:</strong></h2>
-        <p class="blåbærbonanza fyldtekst">En festlig<br>blanding af søde og saftige<br>blåbær, der får dine smagsløg<br>til
-            af danse af glæde.</p>
-
-        <div class="vælg_cupcake_knap">
-            <form action="../shoppingcart.html">
-                <button type="submit">Vælg</button>
-            </form>
-        </div>
-    </div>
-
+</div>
     </body>
 </html>

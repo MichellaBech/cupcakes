@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items vertically */
+    font-family: Georgia, "Times New Roman";
+    height: 50px; /* Adjust height as needed */
+    width: 200px; /* Adjust width as needed */
+}
+
+.logo, .bygselvbillede {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.loginbutton {
+    font-family: Georgia;
+}
+
+.backgroundcolor {
+    background-color: #abf0f3;
+}
+
+
+
+

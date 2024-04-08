@@ -1,6 +1,7 @@
 package app;
 
 import app.config.ThymeleafConfig;
+import app.controllers.CupcakeController;
 import app.controllers.UserController;
 import app.entities.User;
 import app.exceptions.DatabaseException;
@@ -35,6 +36,7 @@ public class Main {
         app.get("/", ctx ->  ctx.render("index.html"));
         UserController.addRoutes(app, connectionPool);
         app.post("/", ctx ->  ctx.render("index.html"));
+        CupcakeController.addRoutes(app, connectionPool);
 
 
     }

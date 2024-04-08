@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="index.html and designCupcake.html">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designCupcake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="htmlandbackend" />
+        <entry key="$PROJECT_DIR$" value="html" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "htmlandscss",
+    "git-widget-placeholder": "payment",
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -65,10 +60,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\css" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\images" />
-      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\css" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates\profilside" />
     </key>
   </component>
@@ -101,7 +96,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712134945461</updated>
       <workItem from="1712134946487" duration="11661000" />
-      <workItem from="1712424832246" duration="5911000" />
+      <workItem from="1712424832246" duration="16598000" />
+      <workItem from="1712495529073" duration="6985000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -159,11 +155,46 @@
       <option name="project" value="LOCAL" />
       <updated>1712429406263</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="index.html and designCupcake.html">
+      <option name="closed" value="true" />
+      <created>1712431365230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712431365230</updated>
+    </task>
+    <task id="LOCAL-00009" summary="designCupcake.html shoppingcart.html">
+      <option name="closed" value="true" />
+      <created>1712441832235</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712441832235</updated>
+    </task>
+    <task id="LOCAL-00010" summary="designCupcake.html shoppingcart.html">
+      <option name="closed" value="true" />
+      <created>1712501657100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712501657100</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup" />
@@ -173,45 +204,25 @@
     <MESSAGE value="addCupcake method, getAllBottoms method,&#10;getAllToppings method, Maria's userMapper, User, and exceptions" />
     <MESSAGE value="html login and create user" />
     <MESSAGE value="index.html and designCupcake.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html and designCupcake.html" />
+    <MESSAGE value="designCupcake.html shoppingcart.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="designCupcake.html shoppingcart.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
+          <line>36</line>
+          <properties class="app.controllers.CupcakeController" method="designcupcake">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/UserController.java</url>
-          <line>17</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/UserController.java</url>
-          <line>58</line>
-          <properties class="app.controllers.UserController" method="login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/persistence/UserMapper.java</url>
-          <line>13</line>
-          <properties class="app.persistence.UserMapper" method="login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/UserController.java</url>
-          <line>25</line>
-          <properties class="app.controllers.UserController" method="createuser">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
