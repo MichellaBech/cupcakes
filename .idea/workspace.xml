@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    Refactor_html_controller
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="Refactoring mappers, html and controllers" />
-
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
- Refactor_html_controller
-    "git-widget-placeholder": "Refactor__html__controller",
-
+    "git-widget-placeholder": "css__and__html",
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -226,7 +231,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
           <line>36</line>
-          <properties class="app.controllers.CupcakeController">
+          <properties class="app.controllers.CupcakeController" method="designcupcake">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
