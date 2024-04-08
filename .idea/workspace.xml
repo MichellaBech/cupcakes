@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Cupcake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Cupcake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/CupcakeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/CupcakeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/ShoppingCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/ShoppingCartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/blåbærcup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/chokoladecup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/jordbærcup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/blåbærcup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/bygselvcup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/chokoladecup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/cupcakefactorylogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/img/jordbærcup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" afterDir="false" />
-    </list>
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="htmlandscss" />
+        <entry key="$PROJECT_DIR$" value="html" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,8 +48,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "html",
-    "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/lifehack_spring_2024",
+    "git-widget-placeholder": "payment",
+    "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,7 +97,7 @@
       <updated>1712134945461</updated>
       <workItem from="1712134946487" duration="11661000" />
       <workItem from="1712424832246" duration="16598000" />
-      <workItem from="1712495529073" duration="6102000" />
+      <workItem from="1712495529073" duration="6985000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -190,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712441832235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="designCupcake.html shoppingcart.html">
+      <option name="closed" value="true" />
+      <created>1712501657100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712501657100</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
