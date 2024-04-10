@@ -20,7 +20,6 @@ public class UserController {
         app.get("/createuser", ctx -> ctx.render("createuser.html"));
         app.post("/createuser", ctx -> createuser(ctx, connectionPool));
         app.get("/designCupcake", ctx -> ctx.render("designcupcake.html"));
-
     }
 
     private static void createuser(Context ctx, ConnectionPool connectionPool)
@@ -46,14 +45,11 @@ public class UserController {
             ctx.attribute("message", "Dine to passwords matcher ikke, prøv igen");
             ctx.render("createuser.html");
         }
-
-
     }
 
     private static void logout(Context ctx) {
         ctx.req().getSession().invalidate();
         ctx.render("index.html");
-
     }
 
     public static void login(Context ctx, ConnectionPool connectionPool)  {
@@ -70,6 +66,5 @@ public class UserController {
             ctx.attribute("message", e.getMessage());
             ctx.render("index.html");
         }
-
     }
 }

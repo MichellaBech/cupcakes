@@ -4,7 +4,7 @@ split
 :#Kunde med login;
   :logger ind;
   :Vælg cupcake;
-  :vælg indgredienser & antal;
+  :vælg ingredienser & antal;
   :føj til kurv;
   :indkøbskurv;
   :betal;
@@ -15,7 +15,7 @@ split
   :opretter bruger;
   :log ind;
   :Vælg cupcake;
-  :vælg indgredienser & antal;
+  :vælg ingredienser & antal;
   :føj til kurv;
   :indkøbskurv;
   :betal;

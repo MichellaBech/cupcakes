@@ -14,8 +14,6 @@ import java.util.Map;
 public class CupcakeMapper {
     public static Map<String, Double> getAllToppings(ConnectionPool connectionPool) throws DatabaseException {
 
-
-
         Map<String, Double> toppingMap = new LinkedHashMap<>();
 
         String sql = "SELECT topping_name, topping_price FROM public.topping\n" +
@@ -39,6 +37,7 @@ public class CupcakeMapper {
     }
 
     public static Map<String, Double> getAllBottoms(ConnectionPool connectionPool) throws DatabaseException {
+
         Map<String, Double> bottomMap = new LinkedHashMap<>();
 
         String sql = "SELECT bottom_name, bottom_price FROM public.bottom\n" +
@@ -62,6 +61,7 @@ public class CupcakeMapper {
     }
 
     public static double getBottomPrice(String bottom_name, ConnectionPool connectionPool) throws DatabaseException {
+
         String sql = "SELECT bottom_price FROM public.bottom WHERE bottom_name = ?";
 
         Double price = null;
@@ -81,6 +81,7 @@ public class CupcakeMapper {
     }
 
     public static double getToppingPrice(String topping_name, ConnectionPool connectionPool) throws DatabaseException {
+
         String sql = "SELECT topping_price FROM public.topping WHERE topping_name = ?";
 
         Double price = null;

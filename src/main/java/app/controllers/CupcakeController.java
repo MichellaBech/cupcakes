@@ -31,7 +31,6 @@ public class CupcakeController {
         app.post("/designcupcake", ctx -> designcupcake(ctx, connectionPool));
         app.post("/shoppingcart", ctx -> ctx.render("shoppingcart.html"));
         app.get("/login", ctx -> ctx.render("login.html"));
-
     }
 
     private static void designcupcake(Context ctx, ConnectionPool connectionPool) {
@@ -85,5 +84,4 @@ public class CupcakeController {
     private static boolean userIsLoggedIn(Context ctx) {
             return ctx.sessionAttribute("currentUser") instanceof User;
         }
-
 }

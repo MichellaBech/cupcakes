@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="Text updated">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="sql added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/CupcakeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/CupcakeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/diagrammer/cupcake.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/diagrams/cupcakeActivityDiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
         <option value="Class" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="UML State" />
       </list>
     </option>
   </component>
@@ -28,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="sql" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,12 +53,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "DefaultPlantUmlFileTemplate": "UML State",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "sql",
-    "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
+    "git-widget-placeholder": "diagrams",
+    "last_opened_file_path": "C:/Users/maria/OneDrive - EFIF/DAT 2. sem/Flow 3 - Webstack/Uge 10 og 11 - Cupcake/State_diagram",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,6 +101,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +116,9 @@
       <workItem from="1712134946487" duration="11661000" />
       <workItem from="1712424832246" duration="16598000" />
       <workItem from="1712495529073" duration="6985000" />
-      <workItem from="1712652451516" duration="1482000" />
+      <workItem from="1712652451516" duration="3794000" />
+      <workItem from="1712669080944" duration="1541000" />
+      <workItem from="1712734536008" duration="6026000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -198,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712570488489</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="sql added">
+      <option name="closed" value="true" />
+      <created>1712657165337</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712657165337</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,26 +243,7 @@
     <MESSAGE value="index.html and designCupcake.html" />
     <MESSAGE value="designCupcake.html shoppingcart.html" />
     <MESSAGE value="Refactoring mappers, html and controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring mappers, html and controllers" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
-          <line>36</line>
-          <properties class="app.controllers.CupcakeController" method="designcupcake">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/controllers/CupcakeController.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="sql added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql added" />
   </component>
 </project>

@@ -69,7 +69,7 @@ import java.sql.SQLException;
             catch (SQLException e)
             {
                 String msg = "Der er sket en fejl. Prøv igen";
-                if (e.getMessage().startsWith("ERROR: duplicate key value "))
+                if (e.getMessage().startsWith("ERROR: duplicate key value"))
                 {
                     msg = "Brugernavnet eller email findes allerede. Vælg et andet eller login";
                 }
