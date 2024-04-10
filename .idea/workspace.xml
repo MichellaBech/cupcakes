@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="designCupcake.html shoppingcart.html">
+    <list default="true" id="87ba836e-2a2f-4151-9e9c-592774f83266" name="Changes" comment="Text updated">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/forside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/designcupcake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingcart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,23 +51,30 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "css__and__html",
+    "git-widget-placeholder": "sql",
     "last_opened_file_path": "C:/Users/miche/OneDrive/Dokumenter/Datamatiker/DAT2/FLOW-THREE/cupcakes/cupcakes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maria\OneDrive - EFIF\DAT 2. sem\Flow 3 - Webstack\Uge 10 og 11 - Cupcake\Cupcake\cupcakes\src\main\resources\sql" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\css" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public" />
       <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\public\images" />
-      <recent name="C:\Users\miche\OneDrive\Dokumenter\Datamatiker\DAT2\FLOW-THREE\cupcakes\cupcakes\src\main\resources\templates\profilside" />
     </key>
   </component>
   <component name="RunManager">
@@ -107,6 +108,7 @@
       <workItem from="1712134946487" duration="11661000" />
       <workItem from="1712424832246" duration="16598000" />
       <workItem from="1712495529073" duration="6985000" />
+      <workItem from="1712652451516" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
