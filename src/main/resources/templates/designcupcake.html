@@ -5,7 +5,7 @@
     <title>designcupcake</title>
     <link rel="stylesheet" th:href="@{css/forside.css}" href="../public/css/forside.css">
 </head>
-<div class = "showingemail" th:if="${session.currentUser != null}">
+<div class="showingemail" th:if="${session.currentUser != null}">
     <span th:text="${session.currentUser.userMail}"></span> |
 </div>
 <body>
@@ -25,7 +25,8 @@
                 <select name="bottom" id="bottom" required>
                     <option value="">Vælg bund</option>
                     <!-- Iterate over bottoms and populate options -->
-                    <option th:each="entry : ${bottoms.entrySet()}" th:value="${entry.key}" th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
+                    <option th:each="entry : ${bottoms.entrySet()}" th:value="${entry.key}"
+                            th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
                 </select>
                 </select>
                 <input type="hidden" name="bottom_price" th:value="${bottoms[bottom]}">
@@ -40,7 +41,8 @@
                 <select name="topping" id="topping" required>
                     <option value="">Vælg topping</option>
                     <!-- Iterate over toppings and populate options -->
-                    <option th:each="entry : ${toppings.entrySet()}" th:value="${entry.key}" th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
+                    <option th:each="entry : ${toppings.entrySet()}" th:value="${entry.key}"
+                            th:text="${entry.key + ' - ' + entry.value + ' DKK'}"></option>
                 </select>
                 <input type="hidden" name="topping_price" th:value="${toppings[topping]}">
             </td>

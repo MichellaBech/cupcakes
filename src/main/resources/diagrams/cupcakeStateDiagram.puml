@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+Title Cupcake
+
+state index
+state login
+state createUser
+
+
+note left of login
+username and email
+stored in session
+end note
+
+[*] --> index
+index --> login: login [if ok]
+index --> index: knap "log ud"
+index --> sessionLoggedIn
+login --> createUser: knap "opret bruger" [if ok]
+createUser --> index: return
+
+state sessionLoggedIn {
+state login
+state indexLoggedIn
+state designCupcake
+state shoppingCard
+
+indexLoggedIn --> designCupcake: knap "vælg"
+designCupcake --> shoppingCard: knap "indkøbskurv"
+
+}
+
+@enduml
