@@ -1,0 +1,24 @@
+@startuml
+start
+split
+:#Kunde med login;
+  :logger ind;
+  :Vælg cupcake;
+  :vælg indgredienser & antal;
+  :føj til kurv;
+  :indkøbskurv;
+  :betal;
+  #pink:error (payment not found);
+  stop
+  split again
+:#kunde uden login;
+  :opretter bruger;
+  :log ind;
+  :Vælg cupcake;
+  :vælg indgredienser & antal;
+  :føj til kurv;
+  :indkøbskurv;
+  :betal;
+  #pink:error (payment not found);
+stop
+@enduml
